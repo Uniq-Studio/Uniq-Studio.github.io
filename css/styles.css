@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 body{
-    font-family: 'Manrope', sans-serif;  
+    font-family: 'Manrope', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fffefc;
 }
 
 
@@ -25,7 +28,7 @@ body{
 #header{
     display: flex;
     justify-content:space-between;
-    background-color: #FB6376;
+    background-color: #f1b6bd;
     padding: 5px;
     height: 50px;
     position: sticky;
@@ -56,13 +59,48 @@ nav ul li a {
 
 nav ul li a:hover {
   display: block;
-  background-color: #ca626e;
+  background-color: #c98a91;
   color: #FFF9EC;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   margin: auto;
 }
+
+
+#title_banner{
+    position: relative;
+    height: 600px;
+    background-image: url(../images/web_image_bar_normal.png);
+}
+
+#image_aside{
+    position:absolute;
+    left: -150px;
+}
+#image_aside img{
+    height: 550px;
+    width: 550px;
+    padding-top: 25px;
+}
+
+#text_aside{
+    float: right;
+    padding-right: 50px;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: .01;
+    padding-top: 150px;
+}
+
+#text_aside p{
+    font-size: 25px;
+    font-weight: normal;
+    top: -10px;
+    float: right;
+    padding-right: 10px;
+}
+
 
 footer{
     font-size: 10px;
