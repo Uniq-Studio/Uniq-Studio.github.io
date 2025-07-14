@@ -1,0 +1,55 @@
+.subtitle{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 10px 5px 10px;
+    margin: 0;
+}
+
+article{
+    margin: 0% 20% 4% 20%;
+
+}
+
+.card_view{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: var(--md-sys-color-secondary-container);
+    padding: 5px;
+    height: 250px;
+    margin: 10px 5% ;
+
+}
+
+.card{
+    background-color: var(--md-sys-color-secondary-fixed-dim);
+    min-width: 250px;
+    width: 300px;
+    margin: 20px;
+}
+
+.card h3{
+    background-color: var(--md-sys-color-on-primary-fixed-variant);
+    color: var( --md-sys-color-inverse-on-surface);
+    height: 30%;
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.card p{
+    text-align: center;
+    padding: 35px 10px;
+    margin: 0;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+article p{
+    margin-top: 0;
+}
+
