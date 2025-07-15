@@ -19,10 +19,11 @@ article{
     padding: 5px;
     height: 250px;
     margin: 10px 5% ;
-
+    list-style-type: none;
 }
 
 .card{
+    border-radius: 25px;
     background-color: var(--md-sys-color-secondary-fixed-dim);
     min-width: 250px;
     width: 300px;
@@ -30,6 +31,7 @@ article{
 }
 
 .card h3{
+    border-radius: 25px 25px 0px 0px;
     background-color: var(--md-sys-color-on-primary-fixed-variant);
     color: var( --md-sys-color-inverse-on-surface);
     height: 30%;
