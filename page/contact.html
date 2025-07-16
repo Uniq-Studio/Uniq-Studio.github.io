@@ -40,13 +40,13 @@
                 <fieldset>
                     <legend>What can we improve?</legend>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" required minlength="5" placeholder="Full Name">
+                    <input id="name" type="text" name="name" required minlength="5" placeholder="Full Name">
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Email">
+                    <input id="email" type="email" name="email" placeholder="Email">
 
                     <label for="issue_type">Issue type:</label>
-                    <select name="issue_type">
+                    <select id="issue_type" name="issue_type">
                         <option>Bug</option>
                         <option>App Breaking</option>
                         <option>Unexpected Behaviour</option>
@@ -68,7 +68,7 @@
 
                     <label for="description">Explain what happened:</label>
 
-                    <textarea name="description" rows = 10 cols = 45></textarea>
+                    <textarea id="description" name="description" rows = 10 cols = 45></textarea>
 
                     <button type="submit">Submit</button>
                 </fieldset>
