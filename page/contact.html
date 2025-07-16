@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/contact.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Issues with Shifly App can be reported here!">
@@ -54,6 +55,7 @@
                     </select>                    
                         
                     <label for="ruined_shift">Has it ruined your shift</label>
+                    <div class="radio_group">
                     <input type="radio" name="ruined_shift" value="yes">
                     <label for="yes">Yes</label>
                     <br>
@@ -62,10 +64,11 @@
                     <br>                        
                     <input type="radio" name="ruined_shift" value="almost">
                     <label for="almost">It Could Have</label>
+                    </div>
 
                     <label for="description">Explain what happened:</label>
 
-                    <textarea name="description" rows = 10 cols = 75></textarea>
+                    <textarea name="description" rows = 10 cols = 45></textarea>
 
                     <button type="submit">Submit</button>
                 </fieldset>

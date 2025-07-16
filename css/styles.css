@@ -101,6 +101,27 @@ nav ul li a:hover {
     padding-right: 10px;
 }
 
+@media (max-width: 1268px) { 
+    #image_aside {
+        left: -300px;
+    }
+
+    #text_aside {
+    float: right;
+    padding-right: 5px;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: .01;
+    padding-top: 150px;
+    }
+
+  
+    #title_banner {
+        height: 600px;
+        background-image: url(../images/web_image_bar_normal.png);
+    }
+}
+
 @media (max-width: 768px) { 
     #image_aside {
         display: none; 
