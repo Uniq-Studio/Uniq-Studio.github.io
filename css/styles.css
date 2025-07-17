@@ -143,6 +143,27 @@ nav ul li a:hover {
     }
 }
 
+@media (max-width: 400px) { 
+    #image_aside {
+        display: none; 
+    }
+
+    #text_aside {
+    float: right;
+    padding-right: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: .01;
+    padding-top: 150px;
+    }
+
+  
+    #title_banner {
+        height: 600px;
+        background-image: url(../images/web_image_bar_normal.png);
+    }
+}
+
 
 footer{
     font-size: 10px;
