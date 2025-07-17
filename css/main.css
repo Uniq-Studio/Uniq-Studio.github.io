@@ -10,9 +10,45 @@ article{
 
 }
 
+.screenshots_grid{
+    width: 600px;
+    height: 400px;
+    margin: 2% 15% 2% 15%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.screenshots{
+    width: 300px;
+    height: 150px;
+}
+figcaption{
+    font-size: smaller;
+}
+
+@media (max-width: 900px) { 
+    .screenshots_grid{
+        width: 300px;
+        height: 900px;
+        margin: 2% 1% 2% 1%;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+}
+.screenshots{
+    width: 300px;
+    height: 150px;
+}
+figcaption{
+    font-size: smaller;
+}
+}
+
 .card_view{
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: none;
     display: flex;
     justify-content:space-evenly;
     background-color: var(--md-sys-color-secondary-container);
@@ -54,4 +90,5 @@ h3{
 article p{
     margin-top: 0;
 }
+
 
