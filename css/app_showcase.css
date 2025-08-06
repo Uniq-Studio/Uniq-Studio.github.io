@@ -1,7 +1,18 @@
-.description{
+.short_description{
+    margin: 4% 10%;
+    padding: 1%;
+    background-color: var(--md-sys-color-outline-variant);
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    border-radius: 25px 0px 25px 0px;
 }
+
+.subtitle{
+    font-size: 40px;
+    padding: 0px;
+    margin: 0;
+}
+
 
 .screenshots_grid {
     display: grid;
@@ -27,6 +38,38 @@
 }
 figcaption{
     font-size: smaller;
+}
+
+.image_paragraph {
+    margin: 10px 15%;
+    padding: 20px;
+}
+
+.feature_image {
+    width: 500px;
+    height: auto;
+    display: inline-block;
+}
+
+.feature_info {
+    margin-left: 20px;
+    max-width: 59%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.feature_title {
+    font-size: 45px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0%;
+    margin: 0% 0% 30px 0%;
+}
+
+.feature_description {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0% 0% 15px 0%;
 }
 
 @media (max-width: 900px) { 
