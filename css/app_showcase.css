@@ -41,21 +41,32 @@ figcaption{
 }
 
 .image_paragraph {
+    display: flex; /* Use flexbox for flexible layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    flex-direction: row;
+    align-items: center; /* Vertically align items in the center */
+    gap: 20px; /* Add some space between the image and the text */
     margin: 10px 15%;
     padding: 20px;
 }
 
 .feature_image {
-    width: 500px;
+    width: 50%;
     height: auto;
     display: inline-block;
+    flex-grow: 1;
+    flex-basis: 300px;
+    object-fit: cover;
 }
 
 .feature_info {
     margin-left: 20px;
-    max-width: 59%;
+    max-width: 50%;
     vertical-align: top;
     display: inline-block;
+    flex-grow: 2; /* Allow the text to grow more than the image */
+    flex-basis: 300px; /* Set a minimum width for the text before it wraps */
+    min-width: 300px; /* Ensure the text has a decent minimum width */
 }
 
 .feature_title {
