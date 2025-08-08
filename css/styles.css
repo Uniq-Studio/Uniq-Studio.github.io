@@ -82,7 +82,7 @@ nav ul li a:hover {
 #title_banner{
     position: relative;
     height: 600px;
-    background-image: url(../images/web_image_bar_normal.png);
+    background-image: url(../images/web_image_bar_normal.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -132,7 +132,7 @@ nav ul li a:hover {
   
     #title_banner {
         height: 600px;
-        background-image: url(../images/web_image_bar_normal.png);
+        background-image: url(../images/web_image_bar_normal.webp);
     }
 }
 
@@ -153,7 +153,7 @@ nav ul li a:hover {
   
     #title_banner {
         height: 600px;
-        background-image: url(../images/web_image_bar_normal.png);
+        background-image: url(../images/web_image_bar_normal.webp);
     }
 }
 
@@ -174,7 +174,7 @@ nav ul li a:hover {
   
     #title_banner {
         height: 600px;
-        background-image: url(../images/web_image_bar_normal.png);
+        background-image: url(../images/web_image_bar_normal.webp);
     }
 }
 
