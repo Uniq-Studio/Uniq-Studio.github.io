@@ -9,7 +9,6 @@ body{
 
 article{
     margin: 0% 15% 4% 15%;
-
 }
 
 a{
@@ -54,7 +53,7 @@ nav ul{
     overflow: hidden;
 }
 
-li{
+nav ul li{
     float: left;
 }
 
