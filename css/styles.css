@@ -196,6 +196,19 @@ footer p{
     color: #FFF9EC;
 }
 
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.social_img{
+    height: 15px;
+    width: 15px;
+    padding: 0 5px;
+}
+
+
+
 .light {
   --md-sys-color-primary: rgb(143 74 80);
   --md-sys-color-surface-tint: rgb(143 74 80);
