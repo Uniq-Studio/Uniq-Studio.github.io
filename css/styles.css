@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+h1{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Manrope', sans-serif;
     padding: 0;
@@ -29,7 +33,7 @@ a{
     margin: auto;
 }
 
-#logo h1{
+#logo h2{
     margin: auto;
     color: var(--md-sys-color-on-secondary-container);
     padding-left: 10px;
