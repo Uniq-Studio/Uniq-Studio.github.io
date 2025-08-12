@@ -167,6 +167,10 @@ nav ul li a:hover {
         height: 600px;
         background-image: url(../images/web_image_bar_normal.webp);
     }
+
+    #header{
+        top: 0px;
+    }
 }
 
 @media (max-width: 400px) { 
