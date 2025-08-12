@@ -9,79 +9,71 @@
         <title>Uniq Studio</title>
     </head>
     <body class="light">
-        <header id="header">
-            
+                <header id="header">
+
             <a href="../index.html">
                 <div id="logo">
                     <img id="logo_image" src="../images/logo_uniq.webp" alt="Uniq Logo">
-                    <h2>Uniq</h2>
+                    <h2 class="not_important">Uniq</h2>
                 </div>
             </a>
 
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="shifly.html">Shifly</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="not_important"><a href="../index.html">Home</a></li>
+                    <li><a href="../page/shifly.html">Apps</a></li>
+                    <li><a href="../page/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
+
+            <div id="user_info">
+                <p class="not_important">Hey, User!</p>
+                <div id="user_image_container">
+                    <img id="user_image" src="../images/uniq_user_profile.webp" alt="User Image">
+                </div>
+            </div>
         </header>
 
         <main>
 
             <section id="title_banner">
                 <aside id="image_aside">
-                    <img src="../images/shifly_icon.png" alt="Uniq Logo">
+                    <img src="../images/logo_uniq.webp" alt="Uniq Logo">
                 </aside>
                 <aside id="text_aside">
-                <h2>Shifly</h2>
-                <p>Report an Issue</p>
+                <h2>Uniq Studio</h2>
+                <p>Contact Us</p>
                 </aside>
             </section>
 
-
-            <form method="get">
-                <fieldset>
-                    <legend>What can we improve?</legend>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" name="name" required minlength="5" placeholder="Full Name">
-
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" placeholder="Email">
-
-                    <label for="issue_type">Issue type:</label>
-                    <select id="issue_type" name="issue_type">
-                        <option>Bug</option>
-                        <option>App Breaking</option>
-                        <option>Unexpected Behaviour</option>
-                        <option>Not doing what I want</option>
-                        <option>Missing Feature</option>
-                    </select>                    
-                        
-                    <label for="ruined_shift">Has it ruined your shift</label>
-                    <div class="radio_group">
-                    <input type="radio" name="ruined_shift" value="yes">
-                    <label for="yes">Yes</label>
-                    <br>
-                    <input type="radio" name="ruined_shift" value="no">
-                    <label for="no">No</label>
-                    <br>                        
-                    <input type="radio" name="ruined_shift" value="almost">
-                    <label for="almost">It Could Have</label>
-                    </div>
-
-                    <label for="description">Explain what happened:</label>
-
-                    <textarea id="description" name="description" rows = 10 cols = 45></textarea>
-
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-
+            <article>
+                <h2 class="subtitle">How To Contact Us</h2>
+                <p>Please go to our instagram page, and send us a direct message there.</p>
+                <p>We will try to get back to you as soon as possible.</p>
+                <p>Thank you for your patience!</p>
+            </article>
+            
         </main>
 
         <footer>
             <p>Copyright &copy; 2025 Uniq Studio.</p> 
+            <ul>
+                <li>
+                    <a href="https://github.com/Uniq-Studio">
+                        <img class="social_img" src="/images/social_github.webp" alt="Github Link">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/UniqDevUK">
+                        <img class="social_img" src="/images/social_twitter.webp" alt="X Link">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/UniqDevUK">
+                        <img class="social_img" src="/images/social_instagram.webp" alt="X Link">
+                    </a>
+                </li>
+            </ul>
             <p>Developed By Aaron Hamilton</p>
         </footer>
 
