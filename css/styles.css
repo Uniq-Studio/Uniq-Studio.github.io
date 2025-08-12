@@ -212,6 +212,12 @@ footer p{
 footer ul{
     list-style-type: none;
     display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+footer ul li{
+    float: left
 }
 
 .social_img{
