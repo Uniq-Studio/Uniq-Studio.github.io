@@ -93,6 +93,21 @@
     color: var(--md-sys-color-primary);
 }
 
+@media (max-width: 1640px) { 
+    .app_icon{
+        right: -400px;
+    }
+
+    .app_icon_large{
+        right: -300px;
+    }
+
+        .card_description{
+        font-size: 15px;
+    }
+}
+
+
 @media (max-width: 1268px) { 
     #image_aside {
         left: -600px;
