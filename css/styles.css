@@ -31,6 +31,7 @@ a{
     width: 45px;
     height: 45px;
     margin: auto;
+    padding-top: 4px;
 }
 
 #logo h2{
@@ -69,12 +70,14 @@ nav ul li a {
   padding: 14px 16px;
   text-decoration: none;
   margin: auto;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
   display: block;
-  background-color: var(--md-sys-color-tertiary-fixed);
-  color: var(--md-sys-color-on-tertiary-fixed);
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
