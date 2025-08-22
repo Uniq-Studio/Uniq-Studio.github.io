@@ -146,14 +146,23 @@ nav ul li a {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.selected{
+  background-color: var(--md-sys-color-primary);
+  opacity: 0.75;
+  color: var(--md-sys-color-on-primary);
+  transition: opacity 0.3s;
+}
+
 nav ul li a:hover {
   display: block;
   background-color: var(--md-sys-color-primary);
+  opacity: 1;
   color: var(--md-sys-color-on-primary);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   margin: auto;
+  
 }
 
 @media (max-width: 1268px) { 

@@ -124,3 +124,8 @@ article p{
     background-color: var(--md-sys-color-tertiary-fixed);
     color: var(--md-sys-color-on-tertiary-fixed);
 }
+
+.cta_button_selected{
+    background-color: var(--md-sys-color-tertiary-fixed);
+    color: var(--md-sys-color-on-tertiary-fixed);
+}
