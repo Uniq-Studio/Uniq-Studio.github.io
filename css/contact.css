@@ -24,6 +24,13 @@ label{
 button{
     margin-top: 20px;
     height: 20px;
+} 
+
+.subtitle{
+    text-align: left;
+    font-size: 40px;
+    padding: 20px 0 0 0;
+    margin: 0;
 }
 
 @media (max-width: 768px) { 
