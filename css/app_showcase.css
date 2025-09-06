@@ -83,6 +83,31 @@ figcaption{
     margin: 0% 0% 15px 0%;
 }
 
+.button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--md-sys-color-primary);
+  opacity: 0.75;
+  color: var(--md-sys-color-on-primary);
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+}
+
+.button:hover {
+  background-color: var(--md-sys-color-primary);
+  opacity: 1;
+  color: var(--md-sys-color-on-primary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  
+}
+
 @media (max-width: 900px) { 
     .screenshots_grid{
         grid-template-columns: 1fr;
