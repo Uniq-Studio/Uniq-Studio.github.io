@@ -28,7 +28,7 @@ The website is live, with regular updates!
 - **LinkedIn:** www.linkedin.com/in/aaron-hamil5
 - **GitHub:** www.github.com/aaron-hamil5
 
-## Acknowledgements
+## 🙏 Acknowledgements
  - [README Builder: This README](https://readme.so/editor)
  - [ChatGPT: Debugging and Improvements](https://www.chatgpt.com/)
  - [University of the West of Scotland](https://www.uws.ac.uk/study/undergraduate/undergraduate-course-search/web-mobile-development/)
