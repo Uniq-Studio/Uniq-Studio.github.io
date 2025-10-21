@@ -1,4 +1,4 @@
-var darkThemeEnabled;
+var darkThemeEnabled = false;
 
 function setTheme(){
     loadThemePreference();
@@ -21,6 +21,7 @@ function setTheme(){
 
 function toggleDarkTheme() {
     darkThemeEnabled = !darkThemeEnabled;
+    saveThemePreference();
     setTheme();
 }
 
@@ -29,10 +30,6 @@ function saveThemePreference() {
 }
 
 function loadThemePreference() {
-    if(localStorage.getItem("darkThemeEnabled") === null){
-        darkThemeEnabled = false;
-        return;
-    } else {
-        darkThemeEnabled = localStorage.getItem("darkThemeEnabled");
-    }
+    const storedTheme = localStorage.getItem("darkThemeEnabled");
+    darkThemeEnabled = storedTheme === "true";
 }
