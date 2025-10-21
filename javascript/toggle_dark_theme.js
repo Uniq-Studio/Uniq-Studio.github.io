@@ -1,4 +1,4 @@
-var darkThemeEnabled = false;
+var darkThemeEnabled;
 
 function setTheme(){
     loadThemePreference();
