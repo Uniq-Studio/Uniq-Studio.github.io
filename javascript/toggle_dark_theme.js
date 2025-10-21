@@ -29,5 +29,10 @@ function saveThemePreference() {
 }
 
 function loadThemePreference() {
-    const savedPreference = localStorage.getItem("darkThemeEnabled");
+    if(localStorage.getItem("darkThemeEnabled") === null){
+        darkThemeEnabled = false;
+        return;
+    } else {
+        darkThemeEnabled = localStorage.getItem("darkThemeEnabled");
+    }
 }
