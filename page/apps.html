@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="/javascript/toggle_dark_theme.js"></script>
+        <link rel="stylesheet" href="../css/material_design.css">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/apps.css">
         <link rel="canonical" href="https://www.uniqstudio.org/page/apps">
@@ -38,7 +40,7 @@
         <meta name="description" content="Discover unique apps from Uniq. We create powerful mobile apps for iOS and Android using Kotlin Multiplatform.">
         <title>Uniq Studio — Unique Mobile Apps for iOS & Android</title>
     </head>
-    <body class="light">
+    <body onload="setTheme();">
         <h1>Uniq Studio — Unique & Useful Mobile Apps</h1>
         <header id="header">
 
@@ -56,8 +58,10 @@
                     <li><a href="../page/contact">Contact Us</a></li>
                 </ul>
             </nav>
+            
 
             <div id="user_info">
+                <img id="theme_icon" alt="Theme Icon" onclick="toggleDarkTheme();">
                 <p class="not_important">Hey, User!</p>
                 <div id="user_image_container">
                     <img id="user_image" src="../images/uniq_user_profile.webp" alt="User Image">
@@ -127,7 +131,7 @@
         </main>
 
         <footer>
-            <p>Copyright &copy; 2025 Uniq Studio.</p> 
+            <p id="footer_text">Copyright &copy; 2025 Uniq Studio.</p> 
             <ul>
                 <li>
                     <a href="https://github.com/Uniq-Studio">
@@ -145,7 +149,7 @@
                     </a>
                 </li>
             </ul>
-            <p>Developed By Aaron Hamilton</p>
+            <p id="footer_text">Developed By Aaron Hamilton</p>
         </footer>
     </body>
 </html>

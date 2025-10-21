@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="/javascript/toggle_dark_theme.js"></script>
+        <link rel="stylesheet" href="css/material_design.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="canonical" href="https://www.uniqstudio.org/">
@@ -38,7 +40,7 @@
         <meta name="description" content="Discover unique apps from Uniq. We create powerful mobile apps for iOS and Android using Kotlin Multiplatform. View projects and our company's mission.">
         <title>Uniq Studio — Unique Mobile Apps for iOS & Android</title>
     </head>
-    <body class="light">
+    <body onload="setTheme();">
         <h1>Uniq Studio — Unique & Useful Mobile Apps</h1>
         <header id="header">
 
@@ -56,8 +58,10 @@
                     <li><a href="../page/contact">Contact Us</a></li>
                 </ul>
             </nav>
+            
 
             <div id="user_info">
+                <img id="theme_icon" alt="Theme Icon" onclick="toggleDarkTheme();">
                 <p class="not_important">Hey, User!</p>
                 <div id="user_image_container">
                     <img id="user_image" src="../images/uniq_user_profile.webp" alt="User Image">
@@ -155,11 +159,11 @@
                 <h2>Why Choose Uniq Studio Apps?</h2>
                 <p>Our apps are crafted to solve real problems efficiently and intuitively. Whether it's managing busy shifts with Shifly or discovering local gems with My City, our goal is to make your daily tasks smoother.</p>
                 <ul>
-                    <li><strong>Cross-Platform Support:</strong> Run seamlessly on both Android and iOS devices.</li>
-                    <li><strong>Intuitive Design:</strong> Easy-to-use interfaces mean less training, more productivity.</li>
-                    <li><strong>Reliable Performance:</strong> Built with modern technologies to keep things fast and stable.</li>
-                    <li><strong>Personal:</strong> Material You helps make the app more yours, designed to be easy for you</li>
-                    <li><strong>Never Bloated:</strong> Simplicity is key, we keep the contents on the screen to a minimum but informitive and never cluttered with ads</li>
+                    <li><p class="articale_list"><strong>Cross-Platform Support:</strong> Run seamlessly on both Android and iOS devices.</p></li>
+                    <li><p class="articale_list"><strong>Intuitive Design:</strong> Easy-to-use interfaces mean less training, more productivity.</p></li>
+                    <li><p class="articale_list"><strong>Reliable Performance:</strong> Built with modern technologies to keep things fast and stable.</p></li>
+                    <li><p class="articale_list"><strong>Personal:</strong> Material You helps make the app more yours, designed to be easy for you</p></li>
+                    <li><p class="articale_list"><strong>Never Bloated:</strong> Simplicity is key, we keep the contents on the screen to a minimum but informitive and never cluttered with ads</p></li>
 
                 </ul>
                 <br>
@@ -168,7 +172,7 @@
         </main>
 
         <footer>
-            <p>Copyright &copy; 2025 Uniq Studio.</p> 
+            <p id="footer_text">Copyright &copy; 2025 Uniq Studio.</p> 
             <ul>
                 <li>
                     <a href="https://github.com/Uniq-Studio">
@@ -186,7 +190,7 @@
                     </a>
                 </li>
             </ul>
-            <p>Developed By Aaron Hamilton</p>
+            <p id="footer_text">Developed By Aaron Hamilton</p>
         </footer>
     </body>
 </html>

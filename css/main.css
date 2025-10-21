@@ -41,11 +41,12 @@ figcaption{
 
 .card_view{
     border-radius: 25px 0px 25px 0px;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: none;
     display: flex;
     justify-content:space-evenly;
     background-color: var(--md-sys-color-secondary-container);
+    transition: background-color 0.6s;
     padding: 5px;
     height: 250px;
     margin: 10px 5% ;
@@ -55,7 +56,7 @@ figcaption{
 .card{
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 26px;
     background-color: var(--md-sys-color-secondary-fixed-dim);
     min-width: 250px;
     width: 300px;
@@ -64,9 +65,9 @@ figcaption{
 }
 
 .card h3{
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
     background-color: var(--md-sys-color-on-primary-fixed-variant);
-    color: var( --md-sys-color-inverse-on-surface);
+    color: var( --md-sys-color-primary-fixed);
     height: 30%;
     text-align: center;
     font-size: 40px;
@@ -75,6 +76,7 @@ figcaption{
 }
 
 .card p{
+    color: var(--md-sys-color-shadow);
     text-align: center;
     padding: 35px 10px;
     margin: 0;
@@ -128,4 +130,10 @@ article p{
 .cta_button_selected{
     background-color: var(--md-sys-color-tertiary-fixed);
     color: var(--md-sys-color-on-tertiary-fixed);
+}
+
+.articale_list{
+    margin: 0;
+    padding: 0;
+    
 }

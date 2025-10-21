@@ -9,6 +9,17 @@ body{
     padding: 0;
     margin: 0;
     background-color: var(--md-sys-color-background);
+    transition: background-color 0.6s;
+}
+
+h2, h3, h4, h5, h6{
+    color: var(--md-sys-color-on-background);
+    transition: color 0.6s;
+}
+
+p{
+    color: var(--md-sys-color-on-background);
+    transition: color 0.6s;
 }
 
 article{
@@ -32,12 +43,20 @@ a{
     padding: auto;
 }
 
+#theme_icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-self: center;
+}
+
 #user_info p{
     color: var(--md-sys-color-on-secondary-container);
     padding: 0 10px;
     margin: auto;
     font-size: 15px;
 }
+
 #user_image_container{
     display: flex;
     background-color: var(--md-sys-color-primary);
@@ -72,10 +91,18 @@ a{
     position: relative;
     height: 600px;
     padding-top: 100px;
-    background-image: url(../images/web_image_bar_normal.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: background-image 0.6s;
+}
+
+#title_banner.light{
+    background-image: url(../images/web_image_bar_light.webp);
+}
+
+#title_banner.dark{
+    background-image: url(../images/web_image_bar_dark.webp);
 }
 
 #image_aside{
@@ -240,16 +267,12 @@ nav ul li a:hover {
 
 footer{
     font-size: 10px;
-    font-weight:lighter;
+    font-weight:light;
     display: flex;
     margin: auto;
     padding: 5px 15px;
     justify-content:space-between;
     background-color: var(--md-sys-color-inverse-surface);
-}
-
-footer p{
-    color: #FFF9EC;
 }
 
 footer ul{
@@ -261,6 +284,10 @@ footer ul{
 
 footer ul li{
     float: left
+}
+
+#footer_text{
+    color: var(--md-sys-color-inverse-on-surface);
 }
 
 .social_img{

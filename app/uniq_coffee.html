@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="/javascript/toggle_dark_theme.js"></script>
+        <link rel="stylesheet" href="../css/material_design.css">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/app_showcase.css">
         <link rel="canonical" href="https://www.uniqstudio.org/app/uniq_coffee">
@@ -38,11 +40,11 @@
         <meta name="description" content="Get caffeinated faster and easier with Uniq Coffee.">
         <title>Uniq Coffee — Simplified Coffee Ordering Experience</title>
     </head>
-    <body class="light">
+    <body onload="setTheme();">
         <h1>Uniq Studio — Unique & Useful Mobile Apps</h1>
         <header id="header">
 
-            <a href="../index.html">
+            <a href="../index">
                 <div id="logo">
                     <img id="logo_image" src="../images/logo_uniq.webp" alt="Uniq Logo">
                     <h2 class="not_important">Uniq</h2>
@@ -56,8 +58,10 @@
                     <li><a href="../page/contact">Contact Us</a></li>
                 </ul>
             </nav>
+            
 
             <div id="user_info">
+                <img id="theme_icon" alt="Theme Icon" onclick="toggleDarkTheme();">
                 <p class="not_important">Hey, User!</p>
                 <div id="user_image_container">
                     <img id="user_image" src="../images/uniq_user_profile.webp" alt="User Image">
@@ -162,7 +166,7 @@
         </main>
 
         <footer>
-            <p>Copyright &copy; 2025 Uniq Studio.</p> 
+            <p id="footer_text">Copyright &copy; 2025 Uniq Studio.</p> 
             <ul>
                 <li>
                     <a href="https://github.com/Uniq-Studio">
@@ -180,7 +184,7 @@
                     </a>
                 </li>
             </ul>
-            <p>Developed By Aaron Hamilton</p>
+            <p id="footer_text">Developed By Aaron Hamilton</p>
         </footer>
     </body>
 </html>
