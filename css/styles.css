@@ -23,7 +23,7 @@ p{
 }
 
 article{
-    margin: 0% 15% 4% 15%;
+    margin: 0 15% 4% 15%;
 }
 
 a{
@@ -35,12 +35,23 @@ a{
 
 #logo{
     display: flex;
-    padding: auto;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 #user_info{
     display: flex;
-    padding: auto;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
 }
 
 #theme_icon{
@@ -57,17 +68,9 @@ a{
     font-size: 15px;
 }
 
-#user_image_container{
-    display: flex;
-    background-color: var(--md-sys-color-primary);
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-}
 
 #user_image{
+    border: var(--md-sys-color-primary) 5px solid;
     border-radius: 50%;
     width: 40px;
     height: 40px;
