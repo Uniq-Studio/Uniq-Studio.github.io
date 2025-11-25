@@ -221,6 +221,10 @@ nav ul li a:hover {
         display: none; 
     }
 
+    #theme_icon{
+        padding-right: 10px;
+    }
+
     #text_aside {
     float: right;
     padding-right: 5px;
