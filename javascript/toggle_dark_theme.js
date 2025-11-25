@@ -1,5 +1,6 @@
 var darkThemeEnabled = false;
 
+
 function setTheme(){
     loadThemePreference();
 

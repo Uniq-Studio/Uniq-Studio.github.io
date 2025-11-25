@@ -1,0 +1,117 @@
+main{
+}
+
+#title_banner{
+    min-height: calc(100vh - 144px);
+    max-height: calc(100vh - 144px);
+}
+
+.login_panel{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 500px;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 25px;
+    box-shadow: 0 0 30px var(--md-sys-color-shadow-login);
+    overflow: hidden;
+    transition: opacity 0.3s;
+    animation: fadeInArticle 2s;
+}
+
+.login_header{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--md-sys-color-surface-container-highest);
+    box-shadow: 0 5px 4px 0 var(--md-sys-color-shadow-login);
+}
+
+.login_header img{
+    margin: auto 0 auto auto;
+    width: 50px;
+    height: 50px;
+}
+
+.login_header h2{
+    margin: auto auto auto 10px;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.login_body{
+    padding: 0 10%;
+    animation: fadeInSection .9s;
+}
+
+h3{
+    margin: 25px 0 1px 0;
+    font-size: 35px;
+    font-weight: 100;
+    color: var(--md-sys-color-on-surface);
+    transition: color 0.3s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Massive thanks to https://stackoverflow.com/users/4202224/empiric for this Material you style input design! */
+.input {
+    margin-top: 5px
+}
+
+input {
+    border: solid 2px var(--md-sys-color-primary);
+    border-radius: 3px;
+    background: var(--md-sys-color-surface);
+    font-size: 15px;
+    font-weight: 100;
+    height: 40px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+}
+
+label {
+    margin-left: 8px;
+    font-weight: lighter;
+    position: absolute;
+    margin-top: -10px;
+    background: var(--md-sys-color-surface);
+    padding: 0 5px;
+    color: var(--md-sys-color-on-surface);
+}
+
+#forgot_password{
+    font-size: 12px;
+    color: var(--md-sys-color-primary);
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.button{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+@keyframes fadeInArticle {
+    0% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeInSection {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}

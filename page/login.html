@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/javascript/toggle_dark_theme.js"></script>
+    <script src="/javascript/login.js"></script>
+    <link rel="stylesheet" href="../css/material_design.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="canonical" href="https://www.uniqstudio.org/page/login">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Uniq Studio",
+            "url": "https://www.uniqstudio.org",
+            "logo": "https://www.uniqstudio.org/images/logo_uniq.webp",
+            "sameAs": [
+                "https://x.com/UniqDevUK",
+                "https://www.instagram.com/UniqDevUK"
+            ]
+        }
+    </script>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Uniq"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+
+    <meta property="og:title" content="Uniq Studio - Login Page"/>
+    <meta property="og:site_name" content="Uniq Studio"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.uniqstudio.org/page/login"/>
+    <meta property="og:image" content="https://www.uniqstudio.org/images/web_image_bar_large.webp"/>
+    <meta property="og:description" content="Log into your Uniq Studio Account"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up or Login into your Uniq Studio account.">
+    <title>Uniq Studio — Login</title>
+</head>
+<body onload="setTheme();">
+    <h1>Uniq Studio — Login</h1>
+    <main>
+        <section id="title_banner">
+            <article class="login_panel">
+                <header class="login_header">
+                    <img src="/images/logo_uniq.webp" alt="Uniq Logo">
+                    <h2>Uniq Studio</h2>
+                </header>
+                <section class="login_body">
+                    <h3>Login</h3>
+                    <form action="../index" method="POST">
+                        <div class="input">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div>
+                            <div class="input">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <a href="#" id="forgot_password">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="button" onclick="login();">Login</button></form>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer_text">Copyright &copy; 2025 Uniq Studio.</p>
+        <ul>
+            <li>
+                <a href="https://github.com/Uniq-Studio">
+                    <img class="social_img" src="/images/social_github.webp" alt="Github Link">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/UniqDevUK">
+                    <img class="social_img" src="/images/social_twitter.webp" alt="X (Twitter) Link">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/UniqDevUK">
+                    <img class="social_img" src="/images/social_instagram.webp" alt="Instagram Link">
+                </a>
+            </li>
+        </ul>
+        <p class="footer_text">Developed By Aaron Hamilton</p>
+    </footer>
+</body>
+</html>
