@@ -1,29 +1,49 @@
-var darkThemeEnabled = false;
+var darkThemeEnabled = 1
 
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+    if (darkThemeEnabled === 1) setTheme();
+});
 
 function setTheme(){
     if (localStorage.getItem("userAccepted"))loadThemePreference();
 
-    if(darkThemeEnabled){
+    if(darkThemeEnabled === 3){
         document.body.classList.add("dark");
         document.body.classList.remove("light");
         document.getElementById("title_banner").classList.add("dark");
         document.getElementById("title_banner").classList.remove("light");
         document.getElementById("theme_icon").src = "/images/dark_mode.webp";
-    } else {
+    } else if (darkThemeEnabled === 2) {
         document.body.classList.add("light");
         document.body.classList.remove("dark");
         document.getElementById("title_banner").classList.add("light");
         document.getElementById("title_banner").classList.remove("dark");
         document.getElementById("theme_icon").src = "/images/light_mode.webp";
     }
-        saveThemePreference();
+    else if (darkThemeEnabled === 1){
+        if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+            document.body.classList.add("dark");
+            document.body.classList.remove("light");
+            document.getElementById("title_banner").classList.add("dark");
+            document.getElementById("title_banner").classList.remove("light");
+            document.getElementById("theme_icon").src = "/images/auto_mode.webp";
+        } else{
+            document.body.classList.add("light");
+            document.body.classList.remove("dark");
+            document.getElementById("title_banner").classList.add("light");
+            document.getElementById("title_banner").classList.remove("dark");
+            document.getElementById("theme_icon").src = "/images/auto_mode.webp";
+        }
+    }
+    saveThemePreference();
 }
 
 function toggleDarkTheme() {
-    darkThemeEnabled = !darkThemeEnabled;
-    saveThemePreference();
-    setTheme();
+    if (localStorage.getItem("userAccepted")) {
+        darkThemeEnabled = (darkThemeEnabled % 3) + 1;
+        saveThemePreference();
+        setTheme();
+    }
 }
 
 function saveThemePreference() {
@@ -32,5 +52,5 @@ function saveThemePreference() {
 
 function loadThemePreference() {
     const storedTheme = localStorage.getItem("darkThemeEnabled");
-    darkThemeEnabled = storedTheme === "true";
+    darkThemeEnabled = Number(storedTheme);
 }
