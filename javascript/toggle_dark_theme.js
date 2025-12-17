@@ -2,7 +2,7 @@ var darkThemeEnabled = false;
 
 
 function setTheme(){
-    loadThemePreference();
+    if (localStorage.getItem("userAccepted"))loadThemePreference();
 
     if(darkThemeEnabled){
         document.body.classList.add("dark");
@@ -17,7 +17,7 @@ function setTheme(){
         document.getElementById("title_banner").classList.remove("dark");
         document.getElementById("theme_icon").src = "/images/light_mode.webp";
     }
-    saveThemePreference()
+        saveThemePreference();
 }
 
 function toggleDarkTheme() {
@@ -27,7 +27,7 @@ function toggleDarkTheme() {
 }
 
 function saveThemePreference() {
-    localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
+    if (localStorage.getItem("userAccepted")) localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
 }
 
 function loadThemePreference() {

@@ -332,3 +332,54 @@ footer ul li{
     width: 15px;
     padding: 0 5px;
 }
+
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 320px;
+    background: var(--md-sys-color-inverse-surface);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+#cookie-banner h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: var(--md-sys-color-inverse-on-surface);
+}
+
+#cookie-banner p {
+    font-size: 14px;
+    margin: 0 0 12px;
+    line-height: 1.4;
+    color: var(--md-sys-color-inverse-on-surface);
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.cookie-actions button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#accept-cookies {
+    background: #4CAF50;
+    color: #fff;
+}
+
+#decline-cookies {
+    background: #555;
+    color: #fff;
+}
