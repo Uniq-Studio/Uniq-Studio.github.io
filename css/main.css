@@ -1,6 +1,7 @@
 #hero_section{
     position: absolute;
     left: calc(50% - 450px);
+    top: calc(50% - 300px);
     margin: 100px auto 0 auto;
     width: 900px;
     text-align: center;
