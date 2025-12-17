@@ -26,8 +26,8 @@ button{
     height: 20px;
 }
 
-article{
-    height: 22.2vh;
+.contact_article{
+    height: calc(100vh - 846px);
 }
 
 .subtitle{
