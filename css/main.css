@@ -238,7 +238,7 @@ article p{
 
     .hero_buttons .button{
         display: block;
-        width: 100%;
+        width: auto;
         text-align: center;
     }
 }
