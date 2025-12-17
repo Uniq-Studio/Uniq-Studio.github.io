@@ -1,4 +1,6 @@
 #hero_section{
+    position: absolute;
+    left: calc(50% - 450px);
     margin: 100px auto 0 auto;
     width: 900px;
     text-align: center;
@@ -194,6 +196,7 @@ article p{
 
 @media (max-width: 1268px) {
     #hero_section{
+        left: calc(50% - 300px);
         margin: 150px auto auto auto;
         width: 600px;
 
@@ -213,6 +216,7 @@ article p{
 
 @media (max-width: 900px) {
     #hero_section{
+        left: calc(50% - 200px);
         margin: 100px auto 0 auto;
         width: 400px;
 
