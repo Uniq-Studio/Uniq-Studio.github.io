@@ -374,12 +374,38 @@ footer ul li{
     font-size: 13px;
 }
 
-#accept-cookies {
+.accept {
     background: #4CAF50;
     color: #fff;
 }
 
-#decline-cookies {
+.decline {
     background: #555;
     color: #fff;
+}
+
+.input {
+    margin-top: 5px
+}
+
+input {
+    border: solid 2px var(--md-sys-color-primary);
+    border-radius: 3px;
+    background: var(--md-sys-color-veriant-surface);
+    color: var(--md-sys-color-on-veriant-surface);
+    font-size: 15px;
+    font-weight: 100;
+    height: 40px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+}
+
+label {
+    margin-left: 8px;
+    font-weight: lighter;
+    position: absolute;
+    margin-top: -10px;
+    background: var(--md-sys-color-veriant-surface);
+    padding: 0 5px;
+    color: var(--md-sys-color-on-variant-surface);
 }

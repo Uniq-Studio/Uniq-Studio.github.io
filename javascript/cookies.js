@@ -1,4 +1,5 @@
 var userAccepted = false;
+var usersName = "User"
 
 document.addEventListener("DOMContentLoaded", () => {
     // Check if user has already made a choice
@@ -15,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
             personal data for advertising or analytics purposes.
         </p>
         <div class="cookie-actions">
-            <button id="decline-cookies">Decline</button>
-            <button id="accept-cookies">Accept</button>
+            <button id="decline-cookies" class="decline">Decline</button>
+            <button id="accept-cookies" class="accept">Accept</button>
         </div>
     `;
 
@@ -25,13 +26,47 @@ document.addEventListener("DOMContentLoaded", () => {
     // Accept cookies
     document.getElementById("accept-cookies").addEventListener("click", () => {
         localStorage.setItem("userAccepted", true);
-        banner.remove();
+        banner.innerHTML = `
+        <h4>Customise Uniq Studio</h4>
+        <p>This will be saved locally.</p>
+        <p>What is your name?</p>
+        <form action="../index" method="POST">
+            <div class="input">
+            <input type="text" id="name" name="name" required>
+            </div>     
+        </form>
+        <br>
+        <div class="cookie-actions">
+            <button id="decline-customise" class="decline">Skip</button>
+            <button id="accept-customise" class="accept">Add</button>
+        </div>
+        
+    `;
+
+        document.getElementById("accept-customise").addEventListener("click", () => {
+            const usersName = document.getElementById("name").value.trim();
+
+            if (usersName) {
+                localStorage.setItem("usersName", usersName);
+                document.getElementById("hey_user").textContent = `Hey, ${usersName}!`;
+            }
+
+            banner.remove();
+        });
+
+        document.getElementById("decline-customise").addEventListener("click", () => {
+
+            localStorage.setItem("usersName", "User");
+            document.getElementById("hey_user").textContent = `Hey, ${usersName}!`;
+            banner.remove();
+        });
     });
 
     // Decline cookies
     document.getElementById("decline-cookies").addEventListener("click", () => {
         localStorage.removeItem("userAccepted");
         localStorage.removeItem("darkThemeEnabled");
+        localStorage.removeItem("usersName");
         banner.remove();
     });
 });

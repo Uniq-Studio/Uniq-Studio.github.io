@@ -1,4 +1,4 @@
-var darkThemeEnabled = 1
+var darkThemeEnabled = 0
 
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
     if (darkThemeEnabled === 1) setTheme();
@@ -6,21 +6,22 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e =
 
 function setTheme(){
     if (localStorage.getItem("userAccepted"))loadThemePreference();
+    if (localStorage.getItem("usersName"))loadName();
 
-    if(darkThemeEnabled === 3){
+    if(darkThemeEnabled === 2){
         document.body.classList.add("dark");
         document.body.classList.remove("light");
         document.getElementById("title_banner").classList.add("dark");
         document.getElementById("title_banner").classList.remove("light");
         document.getElementById("theme_icon").src = "/images/dark_mode.webp";
-    } else if (darkThemeEnabled === 2) {
+    } else if (darkThemeEnabled === 1) {
         document.body.classList.add("light");
         document.body.classList.remove("dark");
         document.getElementById("title_banner").classList.add("light");
         document.getElementById("title_banner").classList.remove("dark");
         document.getElementById("theme_icon").src = "/images/light_mode.webp";
     }
-    else if (darkThemeEnabled === 1){
+    else if (darkThemeEnabled === 0){
         if(window.matchMedia("(prefers-color-scheme: dark)").matches){
             document.body.classList.add("dark");
             document.body.classList.remove("light");
@@ -40,7 +41,11 @@ function setTheme(){
 
 function toggleDarkTheme() {
     if (localStorage.getItem("userAccepted")) {
-        darkThemeEnabled = (darkThemeEnabled % 3) + 1;
+        if (darkThemeEnabled === 2){
+            darkThemeEnabled = 0
+        } else {
+            darkThemeEnabled += 1
+        }
         saveThemePreference();
         setTheme();
     }
@@ -52,5 +57,14 @@ function saveThemePreference() {
 
 function loadThemePreference() {
     const storedTheme = localStorage.getItem("darkThemeEnabled");
-    darkThemeEnabled = Number(storedTheme);
+    if (storedTheme !== null) {
+        darkThemeEnabled = Number(storedTheme);
+    }
+}
+
+function loadName(){
+    const storedName = localStorage.getItem("usersName");
+    if (storedName !== null) {
+        document.getElementById("hey_user").textContent = `Hey, ${storedName}!`;
+    }
 }
