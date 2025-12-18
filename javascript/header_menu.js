@@ -14,8 +14,8 @@ function openMenu(){
         menu.id = "menu";
         menu.innerHTML = `
         <ul class="menu_list"">
-            <li class="menu_item"><a title="Unavailable" onclick="alert('Sorry, Setting is currently unavailable.')"><img class="menu_image" src="images/ui/settings.webp">Settings</a></li>
-            <li class="menu_item"><a href="../page/login"><img class="menu_image" src="images/ui/login.webp">Login</a></li>
+            <li class="menu_item"><a title="Unavailable" onclick="alert('Sorry, Setting is currently unavailable.')"><img class="menu_image" src="../images/ui/settings.webp">Settings</a></li>
+            <li class="menu_item"><a href="../page/login"><img class="menu_image" src="../images/ui/login.webp">Login</a></li>
         </ul>
     `;
         document.body.appendChild(menu);
