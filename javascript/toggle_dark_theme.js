@@ -1,7 +1,7 @@
 var darkThemeEnabled = 0
 
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
-    if (darkThemeEnabled === 1) setTheme();
+    if (darkThemeEnabled === 0) setTheme();
 });
 
 function setTheme(){
