@@ -3,6 +3,7 @@
     <head>
         <script src="/javascript/toggle_dark_theme.js"></script>
         <script src="/javascript/cookies.js"></script>
+        <script src="/javascript/header_menu.js"></script>
         <link rel="stylesheet" href="../css/material_design.css">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/apps.css">
@@ -59,12 +60,12 @@
                     <li><a href="../page/contact">Contact Us</a></li>
                 </ul>
             </nav>
-            
+
 
             <div id="user_info">
                 <img id="theme_icon" alt="Theme Icon" onclick="toggleDarkTheme();">
-                <a href="/page/login">
-                    <p class="not_important">Hey, User!</p>
+                <a class="clickable" onclick="toggleMenu();">
+                    <p class="not_important" id="hey_user">Hey, User!</p>
                     <img id="user_image" src="../images/uniq_user_profile.webp" alt="User Image">
                 </a>
             </div>

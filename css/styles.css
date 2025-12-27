@@ -95,6 +95,60 @@ nav{
     padding-left: 10px;
 }
 
+#menu{
+    position: fixed;
+    width: 150px;
+    z-index: 1;
+    background-color: var(--md-sys-color-surface);
+    right: calc(10% - 15px);
+    top: 40px;
+    padding: 25px 0 0 0;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.menu_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu_list a{
+    width: 100%;
+    height: 100%;
+    color: var(--md-sys-color-on-primary-container);
+    cursor: pointer;
+}
+
+.menu_item{
+    display: flex;
+    width: auto;
+    height: 40px;
+    background-color: var(--md-sys-color-primary-container);
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.menu_image{
+    padding: 4px 4px 4px 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.menu_item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.clickable{
+    cursor: pointer;
+}
 
 #title_banner{
     position: relative;
