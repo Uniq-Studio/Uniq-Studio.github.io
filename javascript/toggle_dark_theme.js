@@ -6,7 +6,6 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e =
 
 function setTheme(){
     if (localStorage.getItem("userAccepted"))loadThemePreference();
-    if (localStorage.getItem("usersName"))loadName();
 
     if(darkThemeEnabled === 2){
         document.body.classList.add("dark");
@@ -59,12 +58,5 @@ function loadThemePreference() {
     const storedTheme = localStorage.getItem("darkThemeEnabled");
     if (storedTheme !== null) {
         darkThemeEnabled = Number(storedTheme);
-    }
-}
-
-function loadName(){
-    const storedName = localStorage.getItem("usersName");
-    if (storedName !== null) {
-        document.getElementById("hey_user").textContent = `Hey, ${storedName}!`;
     }
 }

@@ -65,13 +65,15 @@ form{
 
 /* Massive thanks to https://stackoverflow.com/users/4202224/empiric for this Material you style input design! */
 .input {
-    margin-top: 5px
+    margin-top: 5px;
+    position: relative;
 }
 
 input {
     border: solid 2px var(--md-sys-color-primary);
     border-radius: 3px;
     background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
     font-size: 15px;
     font-weight: 100;
     height: 40px;
@@ -83,10 +85,19 @@ label {
     margin-left: 8px;
     font-weight: lighter;
     position: absolute;
-    margin-top: -10px;
     background: var(--md-sys-color-surface);
     padding: 0 5px;
     color: var(--md-sys-color-on-surface);
+    top: 22px;
+    font-size: 15px;
+    transition: 0.3s top, 0.3s font-size;
+
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    top: 0;
+    font-size: 12px;
 }
 
 #forgot_password{
