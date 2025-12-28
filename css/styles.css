@@ -252,6 +252,56 @@ nav{
     border: 1px solid var(--md-sys-color-primary);
 }
 
+@media (max-width: 900px) {
+    #hero_section{
+        left: calc(50% - 200px);
+        margin: 100px auto 0 auto;
+        width: 400px;
+
+    }
+    .hero_title, .hero_title_primary{
+        font-size: 55px;
+    }
+
+    .hero_title_primary {
+        margin-top: -20px;
+    }
+
+    .hero_text{
+        font-size: 20px;
+    }
+    .hero_buttons{
+        flex-direction: column;
+    }
+
+    .hero_buttons .button{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1268px) {
+    #hero_section{
+        left: calc(50% - 300px);
+        margin: 150px auto auto auto;
+        width: 600px;
+
+    }
+    .hero_title, .hero_title_primary{
+        font-size: 84px;
+    }
+
+    .hero_title_primary {
+        margin-top: -25px;
+    }
+
+    .hero_text{
+        font-size: 25px;
+    }
+}
+
+
 
 #header{
     display: flex;
