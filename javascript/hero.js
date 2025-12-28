@@ -1,7 +1,7 @@
-function autoHero() {
+document.addEventListener("DOMContentLoaded", () => {
     setTimeout(changeHero, 2000)
     setTimeout(removeAside, 2600)
-}
+});
 
 function changeHero(){
     document.getElementById('image_aside').style.opacity = "0";

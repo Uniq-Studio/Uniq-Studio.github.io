@@ -34,8 +34,8 @@ article{
 a{
     display: flex;
     text-decoration: none;
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -104,7 +104,7 @@ nav{
     top: 40px;
     padding: 25px 0 0 0;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.6s;
 }
@@ -195,6 +195,64 @@ nav{
     padding-right: 10px;
 }
 
+#hero_section{
+    position: absolute;
+    left: calc(50% - 500px);
+    top: calc(50% - 300px);
+    margin: 100px auto 0 auto;
+    width: 1000px;
+    text-align: center;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+#image_aside,
+#text_aside {
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+.hero_title, .hero_title_primary{
+    font-size: 125px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.hero_title_primary{
+    margin-top: -45px;
+    color: var(--md-sys-color-primary);
+}
+
+.hero_text{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.hero_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hero_buttons .button{
+    background-color: var(--md-sys-color-on-primary);
+    font-size: 25px;
+    margin: 30px 0 0 0;
+}
+
+.button.outline{
+    background-color: transparent;
+    border: 1px solid var(--md-sys-color-on-primary);
+    transition: border 0.3s;
+}
+
+.button.outline:hover{
+    border: 1px solid var(--md-sys-color-primary);
+}
+
+
 #header{
     display: flex;
     justify-content:space-between;
@@ -202,7 +260,6 @@ nav{
     padding: 5px 15px 5px 15px;
     height: 50px;
     border-radius: 50px;
-    margin: 5px 15px 0px 15px;
     width: 80%;
     left: 0;
     right: 0;
@@ -210,7 +267,7 @@ nav{
     position: fixed;
     top: 20px;
     z-index: 999;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul{
@@ -261,7 +318,7 @@ nav ul li a:hover {
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 50px;
-    border: 0px solid gray;
+    border: 0 solid gray;
     transition: background-color 0.3s, color 0.3s;
     width: fit-content;
     height: fit-content;
@@ -445,8 +502,8 @@ footer ul li{
 input {
     border: solid 2px var(--md-sys-color-primary);
     border-radius: 3px;
-    background: var(--md-sys-color-veriant-surface);
-    color: var(--md-sys-color-on-veriant-surface);
+    background: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface);
     font-size: 15px;
     font-weight: 100;
     height: 40px;
@@ -459,7 +516,7 @@ label {
     font-weight: lighter;
     position: absolute;
     margin-top: -10px;
-    background: var(--md-sys-color-veriant-surface);
+    background: var(--md-sys-color-surface-variant);
     padding: 0 5px;
-    color: var(--md-sys-color-on-variant-surface);
+    color: var(--md-sys-color-on-surface);
 }
