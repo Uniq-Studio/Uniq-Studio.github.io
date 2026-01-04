@@ -1,4 +1,4 @@
-var open = false;
+let open = false;
 
 function toggleMenu() {
     if (open){
@@ -8,14 +8,16 @@ function toggleMenu() {
     }
 }
 
+document.addEventListener("click", e => {closeMenu()})
+
 function openMenu(){
     if(!open) {
         const menu = document.createElement("menu");
         menu.id = "menu";
         menu.innerHTML = `
         <ul class="menu_list"">
-            <li class="menu_item"><a title="Unavailable" onclick="alert('Sorry, Setting is currently unavailable.')"><img class="menu_image" src="../images/ui/settings.webp">Settings</a></li>
-            <li class="menu_item"><a href="../page/login"><img class="menu_image" src="../images/ui/login.webp">Login</a></li>
+            <li class="menu_item"><a title="Unavailable" onclick="alert('Sorry, Setting is currently unavailable.')"><img class="menu_image" src="../images/ui/settings.webp" alt="Settings Cog">Settings</a></li>
+            <li class="menu_item"><a href="../page/login"><img class="menu_image" src="../images/ui/login.webp" alt="Login Icon">Login</a></li>
         </ul>
     `;
         document.body.appendChild(menu);
@@ -28,6 +30,7 @@ function openMenu(){
 }
 
 function closeMenu(){
+    const menu = document.getElementById("menu");
     if(!open) return;
     if(open) {
         menu.style.opacity = "0"

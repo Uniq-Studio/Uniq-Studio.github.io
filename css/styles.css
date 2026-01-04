@@ -435,6 +435,10 @@ nav ul li a:hover {
         top: 5px;
     }
 
+    #menu{
+        top: 25px
+    }
+
     .not_important{
         display: none;
     }
