@@ -45,41 +45,80 @@ figcaption{
     overflow-y: hidden;
     display: flex;
     justify-content:space-evenly;
-    background-color: var(--md-sys-color-secondary-container);
     transition: background-color 0.6s;
-    padding: 5px;
-    height: 250px;
+    padding: 0;
+    height: 500px;
     margin: 10px 5% ;
     list-style-type: none;
 }
 
-.card{
+
+.app_card{
+    position: relative;
     display: flex;
     flex-direction: column;
-    border-radius: 26px;
-    background-color: var(--md-sys-color-secondary-fixed-dim);
-    min-width: 250px;
+    height: 450px;
+    min-width: 300px;
     width: 300px;
-    margin: 20px;
+    align-items: center;
+    border: 1px solid var(--md-sys-color-secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto 5px;
+}
+
+.card_image_container{
+    height: 50%;
+    width: 100%;
+    background-color: var(--md-sys-color-primary);
+    overflow: hidden;
+}
+
+.card_content{
+    height: 50%;
+    width: 100%;
+    background-color: var(--md-sys-color-primary-container);
+    overflow: hidden;
+    box-shadow: 0 -10px 8px 0 hsl(0deg 0% 0% / 0.3);
+}
+
+.phone_outline{
     position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    top: 25px;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 35px 35px 0 0;
+    overflow: hidden;
 }
 
-.card h3{
-    border-radius: 24px 24px 0 0;
-    background-color: var(--md-sys-color-on-primary-fixed-variant);
-    color: var( --md-sys-color-primary-fixed);
-    height: 30%;
+.app_logo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: -100px;
+    z-index: 20;
+}
+
+.card_content h3{
     text-align: center;
+    color: var(--md-sys-color-on-primary-container);
     font-size: 40px;
+    margin: 5px 0 0 0;
     padding: 0;
+}
+.card_content p{
+    color: var(--md-sys-color-on-primary-container);
+    text-align: center;
+    padding: 5px 10px;
     margin: 0;
 }
-
-.card p{
-    color: var(--md-sys-color-shadow);
+.card_content a{
     text-align: center;
-    padding: 35px 10px;
-    margin: 0;
+    width: auto;
+    padding: 5px 10px;
 }
 
 h3{
@@ -90,49 +129,7 @@ article p{
     margin-top: 0;
 }
 
-.cta_row{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 90%;
-    display: flex;
-    justify-content:space-evenly;
-    padding: 0 5% 2% 5%;
-}
-
-.cta_img{
-    width: 25px;
-    height: 25px;
-}
-
-.cta_button {
-    display: block;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 5px 10px;
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
-    text-decoration: none;
-    font-size: x-small;
-    border-radius: 50px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.cta_button:hover {
-    background-color: var(--md-sys-color-tertiary-fixed);
-    color: var(--md-sys-color-on-tertiary-fixed);
-}
-
-.cta_button_selected{
-    background-color: var(--md-sys-color-tertiary-fixed);
-    color: var(--md-sys-color-on-tertiary-fixed);
-}
-
-.articale_list{
+.article_list{
     margin: 0;
     padding: 0;
     
