@@ -16,7 +16,7 @@ This site highlights projects I've created with **Kotlin Multiplatform, Jetpack 
 ## 🛠️ Tech Stack
 - **Languages**: HTML5, CSS3, JavaScript (soon)
 - **Frameworks**: Plain HTML/CSS
-- **Hosting**: Github Pages
+- **Hosting**: GitHub Pages
 - **Version Control**: Git / GitHub
 
 ## 🚀 Deployment
