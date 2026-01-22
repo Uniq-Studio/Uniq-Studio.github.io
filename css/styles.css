@@ -38,6 +38,18 @@ a{
     padding: 0;
 }
 
+address{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    display: flex;
+}
+
+.one_line_text{
+    display: flex;
+    gap: 5px;
+}
+
 
 #logo{
     display: flex;
