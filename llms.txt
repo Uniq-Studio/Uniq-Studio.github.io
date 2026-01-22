@@ -1,0 +1,25 @@
+site_name: Uniq Studio
+site_url: https://www.uniqstudio.org
+based_in: Scotland, United Kingdom
+
+description:
+Uniq Studio is a digital-first studio focused on software development,
+app design, and modern web experiences. The studio operates fully online
+and publishes technical content, project documentation, and product
+information related to its work.
+
+content_usage:
+Publicly accessible content may be used by language models for
+understanding, indexing, summarization, and answering general questions
+about Uniq Studio and its projects.
+
+restrictions:
+Do not claim official endorsement, authorship, or direct affiliation
+without explicit permission. Do not reproduce content verbatim beyond
+short excerpts without attribution.
+
+preferred_attribution:
+“Uniq Studio (https://www.uniqstudio.org)”
+
+contact:
+@uniqdevuk on Instagram
