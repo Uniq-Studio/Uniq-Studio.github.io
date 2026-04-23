@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="/javascript/toggle_dark_theme.js"></script>
+        <script src="/javascript/cookies.js"></script>
+        <script src="/javascript/header_menu.js"></script>
+        <link rel="stylesheet" href="../css/material_design.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/app_showcase.css">
+        <link rel="canonical" href="https://www.uniqstudio.org/app/kick-start">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Uniq Studio",
+                "url": "https://www.uniqstudio.org",
+                "logo": "https://www.uniqstudio.org/images/logo_uniq.webp",
+                "sameAs": [
+                    "https://x.com/UniqDevUK",
+                    "https://www.instagram.com/UniqDevUK"
+                ],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "GB",
+                    "addressRegion": "Scotland"
+                }
+            }
+        </script>
+
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Uniq" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <meta property="og:title" content="Uniq Studio - Kick Start" />
+        <meta property="og:site_name" content="Uniq Studio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.uniqstudio.org/app/kick-start" />
+        <meta property="og:image" content="https://www.uniqstudio.org/images/web_image_bar_large.webp" />
+        <meta property="og:description" content="Discover Kick Start from Uniq. Keep everyone on track." />
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Running a great shift is one tap away!">
+        <title>Kick Start - Streamlined Access for Modern Workflows.</title>
+    </head>
+    <body>
+        <h1>Uniq Studio — Unique & Useful Mobile Apps</h1>
+        <header id="header">
+
+            <a href="https://www.uniqstudio.org/">
+                <div id="logo">
+                    <img id="logo_image" src="/images/logo_uniq.webp" alt="Uniq Logo">
+                    <h2 class="not_important text_logo">Uniq</h2>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li class="not_important"><a href="https://www.uniqstudio.org/">Home</a></li>
+                    <li><a class="selected" href="https://www.uniqstudio.org/page/apps">Apps</a></li>
+                    <li><a href="https://www.uniqstudio.org/page/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div id="user_info">
+                <img id="theme_icon" alt="Theme Icon" onclick="toggleDarkTheme();" src="/images/auto_mode.webp">
+                <a class="clickable" onclick="toggleMenu();">
+                    <p class="not_important" id="hey_user">Hey, User!</p>
+                    <img id="user_image" src="/images/uniq_user_profile.webp" alt="User Image">
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="title_banner">
+                <aside id="image_aside">
+                    <img src="/images/app-icon/kick-start-icon.webp" alt="Kick Start App Logo">
+                </aside>
+                <aside id="text_aside">
+                <h2 class="text_logo">Kick-Start</h2>
+                <p>Streamlined Access for Modern Workflows.</p>
+                </aside>
+            </section>
+
+            <h2 class="short_description">Kick-Start empowers the modern workforce by centralizing priority applications into a single, intuitive interface. It ensures seamless navigation and enabling users to maintain focus throughout their day.</h2>
+
+            <article>
+                <h2 class="subtitle">Why Kick-Start?</h2>
+                <p><strong>Kick-Start</strong> is more than just a launcher; it is a dedicated environment designed to minimize friction and maximize focus. By centralizing your most important tools into one high-performance interface, Kick-Start removes the clutter of standard Android home screens.</p>
+                <p>Built with <strong>Jetpack Compose</strong> and <strong>Material 3</strong>, it provides a tactile, modern experience that adapts to your needs. Whether you are managing a busy retail floor or a professional workspace, Kick-Start ensures that your priority apps are always exactly where you need them.</p>
+            </article>
+
+            <section>
+                <div class="screenshots_grid">
+                    <figure>
+                        <h3 class="image_title">Straight Forward</h3>
+                        <img class="screenshots" src="/images/kick-start/kick-start-main.webp" alt="Launcher Screen">
+                        <figcaption>Launcher was designed to be visually beautiful and functional, keeping the simplicity.</figcaption>
+                    </figure>
+                    <figure>
+                        <h3 class="image_title">Tailored Apps</h3>
+                        <img class="screenshots" src="/images/kick-start/kick-start-button.webp" alt="Icon Buttons">
+                        <figcaption>Apps specially limited to the fundamentals, helping to stay on track.</figcaption>
+                    </figure>
+                    <figure>
+                        <h3 class="image_title">Support</h3>
+                        <img class="screenshots" src="/images/kick-start/kick-start-link-support.webp" alt="Array of support buttons">
+                        <figcaption>Easily view guides and privacy policies on Uniq Studio website, right inside Kick-Start.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <div class="image_paragraph">
+                <img class="feature_image" src="/images/kick-start/kick-start-main.webp" alt="Launcher Screen">
+                <div class="feature_info">
+                    <h3 class="feature_title">Simplicity is Key</h3>
+                    <p class="feature_description">Kick-Start launcher strikes a perfect balance of aesthetics elements, while keeping functional discipline. Featuring smooth animations and premium 'Uniq' backdrop.</p>
+                    <p class="feature_description">By curating a limited selection of essential apps. Kickstart removes all potential apps that lead to distractions, keeping the most critical tools the primary focus.</p>
+                    <p class="feature_description">Removing the overcrowded feel helps users stay on track and launch the app they require next.</p>
+                    </div>
+            </div>
+
+            <div class="image_paragraph">
+                <div class="feature_info">
+                    <h3 class="feature_title">Protected</h3>
+                    <p class="feature_description">Kick-Start is designed with a focus on operational integrity, ensuring that sensitive configurations and support resources remain out of sight for standard user. The PIN-entry system acts like a protective barrier, designed to prevent unauthorized use of the system.</p>
+                    <p class="feature_description">This helps ensure that only authorized personnel can modify system parameters or to update configurations and update the system app and operating system. Preventing accidental changes that could disrupt workflow.</p>
+                    <p class="feature_description">While this barrier provides basic protection for daily operations, it is important to keep in mind this is a basic utility and not a deep system protection. The PIN is stored locally on device for quick easy offline access.</p>
+                </div>
+                <img class="feature_image" src="/images/kick-start/kick-start-login.webp" alt="Basic pin entry screen">
+            </div>
+
+            <div class="image_paragraph">
+                <img class="feature_image" src="/images/kick-start/kick-start-about.webp" alt="About screen, showing information about the app, and relevant support buttons">
+                <div class="feature_info">
+                    <h3 class="feature_title">Easy Access to Support</h3>
+                    <p class="feature_description">About app screen has dedicated links to help new users understand their new environment. Kick-Start provides immediate access to critical sections</p>
+                    <p class="feature_description">Kick-Start provides access to a Getting Started guide, and the Privacy Policy and Terms of Service, ensuring that the users are never left without the essentials.</p>
+                    <p class="feature_description">To maintain the focus experience, all support resources are loaded directly from Uniq Studio's website within the apps internal browser. This helps keep the user journey unified, allowing for quick review over documentation, without leaving the workspace.</p>
+                </div>
+            </div>
+
+            <div class="image_paragraph">
+                <div class="feature_info">
+                    <h3 class="feature_title">Material You</h3>
+                    <p class="feature_description">Kick-Start is built upon the Material 3 design language, ensuring intuitive experience that feels modern across all devices.</p>
+                    <p class="feature_description"> A core highlight is the integration of Dynamic Color, the app will dynamically update the color scheme from your device's wallpaper making it feel uniquely yours.</p>
+                    <p class="feature_description">Dynamic Color has been disabled on the launcher screen to keep with the 'Uniq' theming alongside the built-in wallpaper, keeping the launcher feeling unified across devices.</p>
+                </div>
+                <img class="feature_image" src="/images/kick-start/kick-start-material-you.webp" alt="Theming change with a green color scheme">
+            </div>
+
+            <article>
+                <h2 class="subtitle">Disclaimer</h2>
+                <p>This app is intended for personal use and entertainment purposes only. It does not connect to any external servers, and all data is stored locally on your device.</p>
+                <p>This software is provided 'as is' without warranty of any kind. Users are responsible for their own data backups and compliance with local regulations.</p>
+                <p>This app is a personal project, and it is <em>not</em> intended for <strong>commercial use</strong>.</p>
+            </article>
+
+            <article>
+                <h2 class="subtitle">Download</h2>
+                <p>Download the Kick-Start app directly from GitHub.</p>
+                <br>
+                <p>Soon...</p>
+            </article>
+        </main>
+
+        <footer>
+            <p class="footer_text">Copyright &copy; 2026 Uniq Studio.</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Uniq-Studio">
+                        <img class="social_img" src="/images/social_github.webp" alt="Github Link">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/UniqDevUK">
+                        <img class="social_img" src="/images/social_twitter.webp" alt="X (Twitter) Link">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/UniqDevUK">
+                        <img class="social_img" src="/images/social_instagram.webp" alt="Instagram Link">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer_text">Developed By Aaron Hamilton</p>
+        </footer>
+    </body>
+</html>
