@@ -7,44 +7,64 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.uniqstudio.org/</loc>
-  <priority>1.00</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/</loc>
+    <priority>1.00</priority>
+    <lastmod>2026-04-23T13:14:00+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/index</loc>
-  <priority>1.00</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/index</loc>
+    <priority>1.00</priority>
+    <lastmod>2026-04-23T13:14:00+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/page/apps</loc>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/page/apps</loc>
+    <priority>0.80</priority>
+    <lastmod>2026-04-23T13:19:00+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/app/shifly</loc>
-  <priority>0.60</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/app/chattr</loc>
+    <priority>0.60</priority>
+    <lastmod>2026-04-23T12:19:58+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/app/uniq-coffee</loc>
-  <priority>0.60</priority>
-</url>
+  <url>
+    <lastmod>2026-04-23T13:14:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <loc>https://www.uniqstudio.org/app/kick-start</loc>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/app/my-city</loc>
-  <priority>0.60</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/app/my-city</loc>
+    <priority>0.60</priority>
+    <lastmod>2026-01-22T15:43:00+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/app/checkr</loc>
-  <priority>0.60</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/app/shifly</loc>
+    <priority>0.60</priority>
+    <lastmod>2026-01-22T15:43:00+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.uniqstudio.org/page/contact</loc>
-  <priority>0.60</priority>
-</url>
+  <url>
+    <loc>https://www.uniqstudio.org/app/uniq-coffee</loc>
+    <priority>0.60</priority>
+    <lastmod>2026-01-22T15:43:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.uniqstudio.org/page/contact</loc>
+    <priority>0.60</priority>
+    <lastmod>2026-01-22T15:43:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.uniqstudio.org/page/login</loc>
+    <priority>0.40</priority>
+    <lastmod>2026-01-22T15:43:00+00:00</lastmod>
+  </url>
 
 </urlset>
